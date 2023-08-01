@@ -1,0 +1,37 @@
+Why java is famous?
+
+-> Because it achieves:
+
+            Platform Independency
+            Write once Run Anywhere[WORA]
+            Multithreading
+
+What is Platform Dependency?
+
+-> Applications that run under only one operating system.
+
+What is Platform Independency?
+
+-> Applications that run on any operating system.
+
+Why we don't send src folder to the client?
+
+-> There are several reasons, the main reason is we don't send our programming logic to others.
+
+What is algorithm?
+
+-> Step-by-step procedure to solve a problem.
+
+Is DSA specific to Java?
+
+-> No DSA is a generic, it can be applied to any programming language.
+
+Compiler over Interpreter?
+
+-> Compiler takes less time as compared to Interpreter.
+
+Is java supports compiler or interpreter?
+
+-> java supports both compiler and interpretation.
+-> compiler is used to convert the source code to byte code
+-> Interpreter is used to convert the byte code to jvm understandable language.
