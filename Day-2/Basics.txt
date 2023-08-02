@@ -1,0 +1,26 @@
+How to approach a problem?
+
+Read the problem --> Analyze the problem --> Think of a solution --> Pen down the solution --> Code the solution
+                                                                      * Flow chart
+                                                                      * Algorithm
+                                                                      * Pseudo code
+
+If we have multiple solutions for a problem, we select the solution based on Time complexity and Space complexity.
+
+Trade-off:
+---------
+
+A tradeoff is a situation where one thing increases and another thing decreases. It is a way to solve a problem in:
+
+Either in less time and by using more space, or
+
+In very little space by spending a long amount of time.
+
+What is procedural language?
+
+A procedural language is a type of computer programming language that specifies a series of well-structured steps and 
+    procedures within its programming context to compose a program. 
+
+It contains a systematic order of statements, functions and commands to complete a computational task or program.
+
+
