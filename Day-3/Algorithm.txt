@@ -1,0 +1,77 @@
+What is algorithm?
+
+ A set of finite rules or instructions to be followed in calculations or other problem-solving operations.
+
+ Use of the Algorithms:
+ --------------------
+
+Algorithms play a crucial role in various fields and have many applications. 
+
+For example:
+
+1. Computer science
+2. Mathematics
+3. Operations Research
+4. Artificial Intelligence
+5. Data science.
+
+What is the need for algorithms?
+
+-> Algorithms are necessary for solving complex problems efficiently and effectively. 
+-> They help to automate processes and make them more reliable, faster, and easier to perform.
+-> Algorithms also enable computers to perform tasks that would be difficult or impossible for humans to do manually.
+
+Characteristics of an Algorithm?
+
+1. Well defined inputs
+2. Clear and unambiguous
+3. Language independent
+4. Feasible
+5. Finite-ness 
+6. Well defined outputs
+
+Properties of Algorithm:
+-----------------------
+
+-> It should terminate after a finite time.
+-> It should produce at least one output.
+-> It should take zero or more input.
+-> It should be deterministic means giving the same output for the same input case.
+-> Every step in the algorithm must be effective i.e. every step should do some work.
+
+Types of Algorithm:
+------------------
+
+1. Brute force algorithm
+2. Recursive algorithm
+3. Backtracking algorithm
+4. Searching algorithm
+5. Sorting algorithm
+6. Hashing algorithm
+7. Divide and conquer Algorithm
+8. Greedy algorithm
+9. Dynamic programming algorithm
+10. Randomized algorithm
+
+Advantages of Algorithms:
+------------------------
+
+-> It is easy to understand.
+-> An algorithm is a step-wise representation of a solution to a given problem.
+-> In an Algorithm the problem is broken down into smaller pieces or steps hence, it is easier for the programmer to convert it into an actual program.
+
+Disadvantages of Algorithms:
+---------------------------
+
+-> Writing an algorithm takes a long time so it is time-consuming.
+-> Understanding complex logic through algorithms can be very difficult.
+-> Branching and Looping statements are difficult to show in Algorithms(imp).
+
+How to Design an Algorithm?
+---------------------------
+
+-> The problem that is to be solved by this algorithm i.e. clear problem definition.
+-> The constraints of the problem must be considered while solving the problem.
+-> The input to be taken to solve the problem.
+-> The output is to be expected when the problem is solved.
+-> The solution to this problem is within the given constraints.
