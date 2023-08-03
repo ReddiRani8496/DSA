@@ -1,0 +1,24 @@
+Sum Of Natural Numbers:
+----------------------
+
+Algorthim:
+---------
+
+1. Read the numbers.
+
+2. Apply the formula: (n*(n+1))/2.
+
+3. Print the sum.
+
+Approach-2:
+----------
+
+1. Read the numbers.
+
+2. Declare the sum variable.
+
+3. Use for loop, repeat until 'n' and increment the sum.
+
+4. Print the sum.
+
+Approach-1 takes O(1) time complexity, whereas Approach-2 takes O(n) time Complexity. 
