@@ -1,0 +1,23 @@
+Why algorithms are needed?
+
+For non-technical persons it is difficult to understand the code, but they can easily understand the algorithms.
+
+
+
+Why computers need algorithms over humans?
+
+Because computers are accurate and speed.
+
+
+
+Why flow charts are required?
+
+It is easy to understand the picture in less time than theory. So flow charts are used.
+
+
+
+Why pseudo code required?
+
+Different people use different programming languages, and that often becomes a problem.
+If you implement an algorithm you've written in one particular language, developers who don't know that language would hardly be able to understand it. 
+To solve this problem, you can use pseudocode.

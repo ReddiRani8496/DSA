@@ -1,0 +1,59 @@
+Pseudocode:
+----------
+
+With pseudocode, you can easily communicate ideas and concepts to other developers, no matter what language they write in.
+
+Pseudocode contains programming constructs like:
+
+            -> loops
+            -> branching statements
+            -> variables
+            -> input
+            -> output
+            -> functions etc.
+
+Pseudocode to find sum of two numbers:
+-------------------------------------
+
+a = 5
+b = 10
+c = a+b
+print(c)
+
+How to read input:
+-----------------
+
+x = input()
+
+Assigning value:
+---------------
+
+a = 5
+b = a
+print(b)
+
+Arithmetic operations:
+---------------------
+
+sum = a+b
+sub = a-b
+mul = a*b
+div = a/b
+rem = a mod b 
+
+Relational operations:
+---------------------
+
+a > b
+a >= b
+a < b 
+a <= b 
+a == b 
+a != b
+
+Logical operations:
+------------------
+
+a > b and a < c
+a > b or a < c
+not a 
