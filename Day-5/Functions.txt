@@ -1,0 +1,13 @@
+//For finding maximum value in the array
+
+function find_max(array):
+    if len(array) == 0 then:
+        return 0
+
+    max = array[1]
+    
+    for i in (2, len(array)):
+        if array[i] > max then:
+            max = array[i]
+    
+    return max

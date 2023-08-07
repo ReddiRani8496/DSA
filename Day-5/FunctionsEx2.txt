@@ -1,0 +1,25 @@
+Penguins are repairing a plane. They've agreed that if they use scotch tape, they will quack, otherwise they'll just wave out the window. They coded and numbered each of their actions. The use of scotch tape has a k=7k=7 number.
+ You also have an array of all their actions, also encrypted with numbers.
+ What will this program output when the array looks like this:
+
+a=[10,9,13,1,13,2,8,5,7,1,20,6,4,18,19,17,5,19,9,18]a=[10,9,13,1,13,2,8,5,7,1,20,6,4,18,19,17,5,19,9,18]?
+
+function penguins(a, k):
+    f = false 
+
+    for i in (1, len(a)):
+        if a[i] == k then:
+            f = true
+
+    if f == true then:
+        print('quack')
+    else:
+        print('wave')
+
+
+
+        
+
+// Answer: quack
+
+Because here k =7 and array also contains element 7, the if condition is true.

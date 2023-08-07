@@ -1,0 +1,10 @@
+//Bob communicates only using pseudocode. He wrote the following lines:
+
+//Bob's code
+
+for i in (7, 14):
+    print("Help me!")
+
+According to the pseudocode that Bob wrote, how many times is he calling for help?
+
+Answer: 8 times (Because here both 7 and 14 are inclusive)

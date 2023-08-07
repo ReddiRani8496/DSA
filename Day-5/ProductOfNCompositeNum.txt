@@ -1,0 +1,20 @@
+function isComposite(num)
+    if num == 1
+        return false
+    for i = 2 TO i*i <= num STEP 1
+        if (num mod i == 0)
+        return true
+    return false
+
+
+function prodComposite(N)
+    SET prod = 1
+    FOR i = N TO 0 STEP -1
+        composite = isComposite(i)
+        if composite then:
+            prod = prod * i 
+    End FOR
+    return prod
+
+prodComposite(20) // product of  composite numbers from 0 to 20
+

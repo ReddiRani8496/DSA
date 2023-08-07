@@ -1,0 +1,18 @@
+What will the following program output when executed?
+
+count = 5
+let_us = 2.63
+if ((count * 3) / 7) >= let_us then:
+   print("Let's count", let_us + count)
+else:
+   print("Let's count", let_us * count)
+
+
+Output:
+------
+
+count*3/7 => (5*3)/7=>2.14
+2.14>=2.63 condition fails
+
+else part will be executed
+prints 2.63 * 5 = 13.15

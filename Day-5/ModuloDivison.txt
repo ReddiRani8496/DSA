@@ -1,0 +1,6 @@
+What is the value of the result variable in the given pseudocode?
+
+a = 5678
+result = (a div 10) mod 10
+
+// Answer : 5678 / 10 => 567 % 10 => 7.

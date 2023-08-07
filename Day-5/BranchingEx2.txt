@@ -1,0 +1,27 @@
+What will the program output be when executed?
+
+a = 2
+b = 3
+c = 4
+b = b - 1
+a = a + b
+// c = c / 2
+rezt = (a + b + c) / 2 
+c = 0
+if rezt < 5 then:
+   print(a)
+elif rezt > 5 then:
+   print(b)
+else:
+   print(c)
+
+Output:
+-----
+
+b =3-1 = 2
+a = 2+2 =4
+rezt = (4+2+4)/2 = 5
+c = 0 // c is assigned to 0
+5<5 condition fails
+5 > 5 condition fails
+else part prints c value i.e., 0. // in line number 10 c value is updated to 0

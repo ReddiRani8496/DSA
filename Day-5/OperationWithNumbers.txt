@@ -1,0 +1,18 @@
+What is the value of the result variable in the given pseudocode?
+
+a = 5
+b = 8
+a = a + b
+b = a - b
+a = a - b
+
+result = a
+
+Output:
+-------
+
+a = 5+8 = 13
+b = 13-8 = 5
+a = 13-5 = 8
+
+result = 13.

@@ -1,0 +1,15 @@
+//You have been given a random array of integers and the following piece of pseudocode. Choose what the program below does, given the array a:
+
+for j in (2, len(a)):
+    t = a[j]
+    i = j − 1
+
+    while (i >= 1) and a[i] > t:
+        a[i + 1] = a[i]
+        i = i − 1
+
+    a[i + 1] = t
+
+print(a)
+
+// Answer: Sort the array

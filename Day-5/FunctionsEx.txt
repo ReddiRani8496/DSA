@@ -1,0 +1,16 @@
+function func(a):
+    if a > 0 then:
+        return a * 2
+    else:
+        return a * a
+
+
+c = -3
+c = func(c)
+
+Output:
+-------
+func(-3)
+it is greater than 0
+so else part will execute -3 * -3 = 9.
+Output = 9.

@@ -1,0 +1,12 @@
+//Read the following lines and determine what role mystery plays from the pseudocode's point of view:
+
+function play(mystery):
+    sum = 0
+    fun = 0
+
+    while mystery[fun] > len(mystery):
+        sum = sum + mystery[fun] 
+        fun = fun + 1
+
+
+Answer: array

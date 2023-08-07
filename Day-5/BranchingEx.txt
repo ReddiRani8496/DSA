@@ -1,0 +1,12 @@
+// To check number is positive or zero or negative
+
+a = -5 // Assigning value to a
+
+if a > 0 then:            // false
+    print("positive")
+
+elif a == 0 then:         // checks this , elif is nothing but else if
+    print("zero")
+
+else:
+    print("negative")     // output

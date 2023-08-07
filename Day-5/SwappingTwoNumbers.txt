@@ -1,0 +1,14 @@
+// pseudo code to swap two numbers
+
+function swap(a, b):
+    temp = a
+    a = b
+    b = temp
+
+c = 3
+d = 5
+
+swap(c, d)
+
+print(c) // 5
+print(d) // 3
