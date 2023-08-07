@@ -1,0 +1,18 @@
+function addPrime(N)
+    SET sum = 0
+    FOR i = N TO 0 STEP -1
+        prime = isPrime(i)
+        if prime then:
+            sum = sum + i 
+    End FOR
+    return sum
+
+function isPrime(num)
+    if num == 1
+        return false
+    for i = 2 TO i*i <= num STEP 1
+        if (num mod i == 0)
+        return false
+    return true
+
+

@@ -1,0 +1,12 @@
+principal = input()
+
+rate = input()
+
+numberOfTimes = input()
+
+time = input()
+
+compoundInterest = principal * ( (1+(rate/numberOfTimes)) power (numberOfTimes * time) ) - principal
+
+
+print(compoundInterest) 
