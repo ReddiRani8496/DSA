@@ -1,0 +1,12 @@
+num = input()
+
+SET div = 2
+
+while div<num:
+
+    if num mod div == 0 then
+        return "composite"
+
+    div = div + 1
+    
+return "prime"

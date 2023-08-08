@@ -1,0 +1,14 @@
+num1 = input()
+num2 = input()
+
+SET gcd = 1
+
+SET i = Min of num1, num2
+
+while i > 0:
+
+    if (num1 mod i == 0) and (num2 mod i == 0) then
+        gcd = i 
+        return gcd
+
+    i = i-1

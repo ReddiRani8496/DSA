@@ -1,0 +1,14 @@
+num1 = input()
+num2 = input()
+num3 = input()
+
+SET big = num1
+
+IF num2>big and num2>num3 then
+    return num2
+
+ELIF num3>big and num3>num2 then
+    return num3
+    
+ELSE 
+    return num1

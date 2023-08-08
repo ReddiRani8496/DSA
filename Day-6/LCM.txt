@@ -1,0 +1,11 @@
+num1 = input()
+num2 = input()
+
+SET lcm = Max of num1, num2
+
+while TRUE:
+
+    if (lcm mod num1 == 0) and (lcm mod num2 == 0), then
+        return lcm
+        
+    lcm = lcm + 1

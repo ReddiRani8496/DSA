@@ -1,0 +1,8 @@
+n = input()
+
+SET sum = 0
+
+FOR i = n TO 0 STEP 1
+    sum = sum+n 
+    
+print(sum)
