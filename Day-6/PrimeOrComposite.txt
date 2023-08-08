@@ -8,5 +8,5 @@ while div<num:
         return "composite"
 
     div = div + 1
-    
+
 return "prime"

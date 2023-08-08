@@ -1,0 +1,98 @@
+What is abstraction?
+
+The process of providing only the essentials and hiding the details is known as abstraction. 
+
+Abstraction is important for business logic.
+
+Abstract Data Type:
+------------------
+
+Using object-orientation implement complex data types.
+
+Creating data structures along with their operations, and such data structures that are not in-built are known as Abstract Data Type (ADT).
+
+ADT only mentions what operations are to be performed but not how these operations will be implemented.
+
+ADTs namely List ADT, Stack ADT, Queue ADT.
+
+1. List ADT:
+-----------
+
+The data is generally stored in key sequence in a list .
+
+operations performed on List ADT are:
+-----------------------------------
+add()
+remove()
+get()
+search()
+replace()
+isEmpty()
+isFull()
+
+Stack ADT:
+---------
+In Stack ADT Implementation instead of data being stored in each node, the pointer to data is stored.
+
+operations performed on Stack ADT are:
+------------------------------------
+
+push()
+pop()
+peek()
+isEmpty()
+size()
+isFull()
+
+Queue ADT:
+---------
+The queue abstract data type (ADT) follows the basic design of the stack abstract data type.
+
+operations performed on Queue ADT are:
+------------------------------------
+
+enqueue()
+dequeue()
+peek()
+isEmpty()
+size()
+isFull()
+
+Features of Abstract Data Type:
+------------------------------
+
+-> Abstraction
+-> Better Conceptualization
+-> Robust
+-> Encapsulation
+-> Data Abstraction
+-> Data Structure Independence
+-> Modularity
+
+Disadvantages of Abstract Data Type:
+-----------------------------------
+-> Overhead
+-> Complexity
+-> Learning
+-> Cost
+
+What is data structure?
+
+It tells how the data is stored in the memory.
+
+Every data structure is having its own advantages and disadvantages.
+
+-> In java we have data structure called collection framework.
+
+Collection framework:
+--------------------
+
+Collection of high quality and high performance.
+
+collection framework contains arraylist,linkedlist, stack,vector,queue,dequeue,priorityqueue,hashset, linkedHashSet
+
+they are fast, high quality and well tested.
+
+Development costs are reduced, because data structures and algorithms are reusable.
+
+
