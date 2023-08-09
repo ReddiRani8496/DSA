@@ -14,7 +14,7 @@ Cost saving and effecient.
 
 The art of problem solving.
 
-Data strucure types:
+Data structure types:
 --------------------
 
 There are two types of data structures:
