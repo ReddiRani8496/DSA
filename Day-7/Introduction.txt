@@ -1,0 +1,57 @@
+What is programming?
+--------------------
+
+Set of instructions given to the computer to perform specific task.
+
+programming is not about typing, it is about thinking.
+
+Why we need to master in data structures?
+-----------------------------------------
+
+Build fast and scalable algorithms.
+
+Cost saving and effecient.
+
+The art of problem solving.
+
+Data strucure types:
+--------------------
+
+There are two types of data structures:
+
+            Linear Data Structure:                                              Non-Linear Data Structure
+            ----------------------                                              -------------------------
+
+            -> Arrays                                                           -> Trees 
+            -> Stack                                                            -> Graphs
+            -> Queue   
+            -> Linkedlist                                                          
+            -> Hash Map(HashTables)
+
+
+Clean code:
+---------
+
+Clean code contains:
+
+Clear and Descriptive names 
+Make code easier to understand.
+variables and methods names follow camel case.
+Class names follow Pascal case.
+
+DRY(Don't Repeat Yourself):
+--------------------------
+
+If you write the same code in multiple places extract that into a function(reuse).
+
+Keep Functions small:[KISS principle Keep It Simple and Stupid]
+---------------------------------------------------------------
+
+Every function should do one thing only and do it well.
+Function is crossing more than 10lines that means it is doing many things, 
+    that indicates the time to break it down.
+
+-> Writing comments is not alternative for clean code.
+
+-> Better ways of doing a thing, refactoring is part of the coding process.
+
