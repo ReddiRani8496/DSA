@@ -30,7 +30,7 @@ There are two types of data structures:
 
 
 Clean code:
----------
+----------
 
 Clean code contains:
 
@@ -50,6 +50,8 @@ Keep Functions small:[KISS principle Keep It Simple and Stupid]
 Every function should do one thing only and do it well.
 Function is crossing more than 10lines that means it is doing many things, 
     that indicates the time to break it down.
+    
+Minimum lines for function is 10-15 lines, worst case 20 lines.
 
 -> Writing comments is not alternative for clean code.
 
