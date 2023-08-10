@@ -1,0 +1,58 @@
+Why can we need to store data in hard disk?
+-------------------------------------------
+
+We can give instructions to the computer using keyboard, for simple code it will be easy, but in companies we deal 
+
+with large amount of code, for ex, millions of lines. Then it will be hard to type the entire code.
+
+To make the work easy, the data will be stored in hard disk.
+
+Why RAM is needed?
+------------------
+
+If we send data from hard disk to CPU, it takes large amount of time, to reduce transfer time and increase speed,
+
+the necessary data will be transfered to RAM from hard disk, then from RAM data will be transfered to CPU.
+
+The data in RAM is temporary.
+
+RAM and CPU is made up of semi conductor technology.
+
+Where as HDD is made up of magnetic technology.
+
+Why can't we store the entire hard disk data to RAM?
+----------------------------------------------------
+
+Because RAM doesn't have enough space and RAM is costly.
+
+Why CPU understand only binary language?
+----------------------------------------
+
+Because CPU is made up of transistors, transistors supports only 0's and 1's.
+
+Why Data Structure needed?
+--------------------------
+
+Arrangement of collection of data times, in a well organized manner.
+
+Difference between data structures and data base?
+------------------------------------------------
+
+-> Data structure is a way of storing and arranging data efficiently in temporary memory.
+
+-> Data base is a collection of data that is stored and managed in permanent memory.
+
+Difference between files and data base?
+--------------------------------------
+
+                Files                                                Data base
+
+-> The file system is a way of arranging the files              -> DBMS is software for managing the database.
+    in a storage medium within a computer.
+
+-> Redundant data can be present.                               -> there is no redundant data.
+
+-> It doesn’t provide backup and recovery                       -> It provides backup and recovery of data even if it is lost
+    of data if it is lost.
+
+
