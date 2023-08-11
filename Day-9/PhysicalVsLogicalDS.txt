@@ -1,0 +1,63 @@
+Physical Data Structure:
+-----------------------
+
+The Array and LinkedList are the two physical data structures.
+
+Why we are calling array and linked list as physical data structures?
+--------------------------------------------------------------------
+
+Because these two data structures decide or define how the memory is organized or how the memory is allocated.
+
+Array:
+-----
+
+The Array is a collection of contiguous memory locations.
+The array will have a fixed size. Once it is created with some size, then that size cannot be increased or decreased.
+
+Where the array can be created?
+------------------------------
+
+It can be created inside the heap.
+
+When to use the array data structure?
+-------------------------------------
+
+ when we are sure what is the maximum number of elements that we are going to store. 
+
+ That means if we know the length of the list then we need to go for the array data structure.
+
+Linked list:
+-----------
+The Linked List data structure is a completely dynamic data structure.
+It is a collection of nodes where each node contains data and a link to the next node. 
+The length of the linked list can grow and reduce dynamically.
+
+Where the linked list can be created?
+-------------------------------------
+
+The linked list is always created in the heap.
+
+When to use the Linked List data structure?
+-------------------------------------------
+
+We need to go with the linked list data structure when we are not sure what is the maximum number of elements that we are going to store. 
+
+ 
+
+-> These two data structures are physical data structures because they define how the memory should be organized for storing the elements or data.
+-> These are more related to memory.
+
+
+Difference between the logical data structure and the physical data structure:
+-----------------------------------------------------------------------------
+
+Physical data structures are actually meant for storing the data in the memory. 
+
+Then on the stored data or values, we may be performing some operations like inserting more values or 
+deleting existing values or searching for the values, and many more operations. 
+
+Now, the question is, how you want to utilize those values? 
+How you will be performing insertion and deletion? 
+What is the discipline that you are going to follow?
+
+-> That discipline is defined by logical data structures i.e. stack, queues, trees, graphs, and hash table.
