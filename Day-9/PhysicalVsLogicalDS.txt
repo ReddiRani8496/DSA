@@ -22,7 +22,7 @@ It can be created inside the heap.
 When to use the array data structure?
 -------------------------------------
 
- when we are sure what is the maximum number of elements that we are going to store. 
+ When we are sure what is the maximum number of elements that we are going to store. 
 
  That means if we know the length of the list then we need to go for the array data structure.
 
