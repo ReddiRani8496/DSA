@@ -1,0 +1,9 @@
+Why softwares are developed?
+
+For customers, if speed of the softwares are fast, then there will be more customers, automatically the revenue and profit of the company increases.
+
+Better Service fast -> More customers -> more revenue -> more profits.
+
+Why speed of CPU is not measured in seconds?
+
+Because the application cannot run in constant speed, it fluctuates, so it is measured in "Hertz".
