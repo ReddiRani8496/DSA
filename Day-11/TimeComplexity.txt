@@ -1,0 +1,16 @@
+How Time complexity is described?
+
+Best case
+Average case
+Worst case 
+
+Big O: Describes the performance of an algorithm.
+
+To check whether the application is scalable or not.
+
+Time and Efficiency are inversly proportional:
+---------------------------------------------
+
+Less Time  - More Efficiency
+
+More Time  - Less Efficiency
