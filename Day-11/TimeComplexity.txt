@@ -4,7 +4,23 @@ Best case
 Average case
 Worst case 
 
+Types of Algorithm Analysis:
+
+Best case 
+Worst case
+Average case
+
+Best case: Define the input for which algorithm takes less time or minimum time. In the best case calculate the lower bound of an algorithm. 
+---------
+
+Worst Case: Define the input for which algorithm takes a long time or maximum time. In the worst calculate the upper bound of an algorithm.
+----------
+
+Average case: In the average case take all random inputs and calculate the computation time for all inputs.
+------------
+
 Big O: Describes the performance of an algorithm.
+-----
 
 To check whether the application is scalable or not.
 
