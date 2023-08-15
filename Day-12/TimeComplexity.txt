@@ -1,0 +1,17 @@
+Classes             n               Complexity number of operations (10)        Execution Time (1 instruction/μsec)
+
+constant           O(1)                     1                                               1 μsec
+
+logarithmic        O(logn)                  3.32                                            3 μsec
+
+linear             O(n)                     10                                              10 μsec
+
+O(nlogn)            O(nlogn)                33.2                                            33 μsec
+
+quadratic           O(n2)                   102                                             100 μsec
+
+cubic               O(n3)                   103                                             1msec
+
+exponential         O(2n)                   1024                                            10 msec
+
+factorial           O(n!)                   10!                                             3.6288 sec
