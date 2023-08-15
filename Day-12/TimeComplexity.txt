@@ -1,3 +1,6 @@
+Classes of algorithms and their execution times on a computer executing 1 million operation per second (1 sec = 106 μsec  = 103 msec):
+
+
 Classes             n               Complexity number of operations (10)        Execution Time (1 instruction/μsec)
 
 constant           O(1)                     1                                               1 μsec
