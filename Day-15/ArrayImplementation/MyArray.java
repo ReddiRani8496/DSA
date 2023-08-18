@@ -135,6 +135,14 @@ public class MyArray {
             items[i] = temp[i];
 
     }
+
+    void removeRange(int start, int end) {
+        int removeLen = end-start;
+        for(int i = end; i < count; i++)
+            items[start++] = items[i];
+        count -= removeLen;
+    }
+    
     int size() {
         return count;
     }
