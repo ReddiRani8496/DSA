@@ -285,6 +285,17 @@ public class MyArray {
         }
     }
 
+    void intersection(int[] arr) {
+       
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < count; j++) {
+                if(arr[i] == items[j])
+                    System.out.println(arr[i]);
+            }
+        }
+       
+    }
+    
     int size() {
         return count;
     }
