@@ -222,6 +222,10 @@ public class MyArray {
 
 
     void ensureCapacity(int value) {
+
+        if(value<0)
+            throw new IllegalArgumentException();
+
         int size = items.length;
         while (items.length<value) {
             size *= 2;
@@ -267,6 +271,10 @@ public class MyArray {
     }
 
     void getItemsOfLength(int length) {
+
+        if(length<1)
+            throw new IllegalArgumentException();
+
         for (int i = 0; i < count; i++) {
             String item = String.valueOf(items[i]);
             if(item.length()==length)
