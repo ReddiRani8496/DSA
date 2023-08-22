@@ -1,17 +1,17 @@
 public class LinkedList {
     private class Node {
-        int value;
-        Node next;
-        Node(int value){
-            this.value =value;
+        private int value;
+        private Node next;
+
+        Node(int value) {
+            this.value = value;
         }
     }
     private Node head;
     private Node tail;
-    void addLast(int item) {
+    public void addLast(int item) {
         var node = new Node(item);
-        node.value = item;
-        if(head==null)
+        if(isEmpty())
             head = tail = node;
         else {
             tail.next = node;
@@ -19,17 +19,20 @@ public class LinkedList {
         }
     }
 
-    void addFirst(int item) {
+    public void addFirst(int item) {
         var node = new Node(item);
-        if(head==null)
+        if(isEmpty())
             head = tail = node;
         else {
             node.next = head;
             head = node;
         }
     }
+    private boolean isEmpty(){
+        return head==null;
+    }
 
-    int valueOf(int index) {
+    public int valueOf(int index) {
         var current = head;
         int start = 0;
         while (current != null) {
@@ -38,23 +41,21 @@ public class LinkedList {
             current = current.next;
             start++;
         }
-        return -1;
+        return  -1;
     }
-
-    int indexOf(int value) {
+    public int indexOf(int value) {
         var current = head;
         int start = 0;
         while (current != null) {
             if(current.value == value)
                 return start;
             current = current.next;
-            start++;
+            start ++;
         }
-        return -1;
+        return  -1;
     }
 
     boolean contains(int value) {
         return indexOf(value) != -1;
     }
-
 }
