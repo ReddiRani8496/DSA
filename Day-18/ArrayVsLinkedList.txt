@@ -1,0 +1,13 @@
+            Array                                                        Linked List
+
+-> Arrays are stored in contiguos location.                         -> Linked Lists are not stored in contiguos location.
+
+-> Fixed in size.                                                   -> Dynamic in size
+
+-> Memory allocated at compile time.                                -> Memory allocated at runtime.
+
+-> Uses less Memory than Linked list.                               -> Uses more memory because it stores data and node.
+
+-> Elements can be accessed easily.                                 -> Elements accessing requires the traversal of whole linked list.
+
+-> Insertion and deletion operations takes time.                    -> Insertion and deletion operation is faster.
