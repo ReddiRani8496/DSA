@@ -116,7 +116,7 @@ public class LinkedList {
         head = previous;
     }
 
-    void printMiddle() {
+    public void printMiddle() {
 
         if(isEmpty())
             throw new NoSuchElementException();
@@ -138,7 +138,7 @@ public class LinkedList {
         }
     }
 
-    void getKElement(int k) {
+    public void getKElement(int k) {
 
         if(isEmpty())
             throw new NoSuchElementException();
@@ -160,7 +160,7 @@ public class LinkedList {
         }
     }
 
-    void getPreviousNode(int value) {
+    public void getPreviousNode(int value) {
 
         if(indexOf(value)==-1)
             throw new NoSuchElementException();
@@ -177,11 +177,6 @@ public class LinkedList {
                 System.out.println("No previous element");
                 return;
             }
-        }
-
-        else {
-             current = head;
-             next = current.next;
         }
 
         while (current!=null){
@@ -207,7 +202,7 @@ public class LinkedList {
         return  false;
     }
 
-    void getNextNextNode(int value) {
+    public void getNextNextNode(int value) {
         if(indexOf(value)==-1)
             throw new NoSuchElementException();
         var current = head;
