@@ -164,6 +164,9 @@ public class LinkedList {
 
         if(indexOf(value)==-1)
             throw new NoSuchElementException();
+        
+        if(head==tail)
+            return;
 
         Node  current = head.next;
         Node next = current.next;
@@ -205,7 +208,11 @@ public class LinkedList {
     public void getNextNextNode(int value) {
         if(indexOf(value)==-1)
             throw new NoSuchElementException();
-        var current = head;
+
+        if(head==tail)
+            return;
+        
+            var current = head;
 
         while (current.next!=tail) {
             if(current.value==value) {
