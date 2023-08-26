@@ -1,0 +1,8 @@
+DisAdvantages of single linked list:
+----------------------------------
+
+Remove last node takes O(n) time complexity.
+
+Reverse takes O(n) time complexity.
+
+AdjustBeforeTail takes O(n) time complexity.
