@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.NoSuchElementException;
 
 public class LinkedList {
@@ -159,7 +160,7 @@ public class LinkedList {
         var backUp = list.tail;
         list.addLast(50);
         list.addLast(60);
-//        list.tail.next = backUp;
+     //  list.tail.next = backUp;
         return list;
     }
 
@@ -174,5 +175,19 @@ public class LinkedList {
         }
         return false;
     }
+
+//    boolean detectLoop() {
+//        HashSet set = new HashSet<>();
+//        var node = head;
+//        while ( node.next != null && (!set.contains(node))){
+//            set.add(node);
+//            node = node.next;
+//
+//        }
+//        if( node.next != null)
+//            return true;
+//        else
+//            return false;
+//    }
 
 }
