@@ -164,7 +164,7 @@ public class LinkedList {
         return list;
     }
 
-    boolean detectLoop() {
+    public boolean detectLoop() {
         var slow = head;
         var fast = head;
         while (fast != null && fast.next != null) {
@@ -176,18 +176,15 @@ public class LinkedList {
         return false;
     }
 
-//    boolean detectLoop() {
-//        HashSet set = new HashSet<>();
-//        var node = head;
-//        while ( node.next != null && (!set.contains(node))){
-//            set.add(node);
-//            node = node.next;
-//
-//        }
-//        if( node.next != null)
-//            return true;
-//        else
-//            return false;
-//    }
+    // public boolean detectLoop() {
+    //     HashSet<Object> set = new HashSet<>();
+    //     var node = head;
+    //     while ( node.next != null && (!set.contains(node))){
+    //         set.add(node);
+    //         node = node.next;
+
+    //     }
+    //     return node.next != null;
+    // }
 
 }
