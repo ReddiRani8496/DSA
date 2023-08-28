@@ -236,6 +236,16 @@ public class SinglyLinkedList {
         }
     }
 
+    public int binToDec() {
+        int result = 0;
+        var current = head;
+        while(current != null) {
+            result *= 2;
+            result += current.value;
+            current = current.next;
+        }
+        return result;
+    }
 
 
 }
