@@ -127,6 +127,31 @@ public class DoublyLinkedList {
         size--;
     }
 
+       public void removeAt(int index) {
+        if(index < 0 || index >= size)
+            throw new IllegalArgumentException();
+        if(index == 0) {
+            removeFirst();
+            return;
+        }
+        if(index == size()-1) {
+            removeLast();
+            return;
+        }
+        var current = head;
+        int start = 0;
+        while (start < index-1) {
+            current = current.next;
+            start++;
+        }
+        var temp = current.next.next;
+        current.next.next.previous = current;
+        current.next.previous = null;
+        current.next.next = null;
+        current.next = temp;
+        size--;
+    }
+
     public int indexOf(int value) {
         var current = head;
         int start = 0;
@@ -155,31 +180,24 @@ public class DoublyLinkedList {
         return -1;
     }
 
-    public void removeAt(int index) {
-        if(index < 0 || index >= size)
-            throw new IllegalArgumentException();
-        if(index == 0) {
-            removeFirst();
-            return;
-        }
-        if(index == size()-1) {
-            removeLast();
-            return;
-        }
-        var current = head;
-        int start = 0;
-        while (start < index-1) {
-            current = current.next;
-            start++;
-        }
-        var temp = current.next.next;
-        current.next.next.previous = current;
-        current.next.previous = null;
-        current.next.next = null;
-        current.next = temp;
-        size--;
-    }
+ 
 
-   
+    public void reverse() {
+        if(isEmpty())
+            return;
+        var previous = head;
+        var current = previous.next;
+        while (current!=null) {
+            var next = current.next;
+            previous.previous = current;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        tail = head;
+        tail.next = null;
+        head = previous;
+        head.previous = null;
+    }
 }
 

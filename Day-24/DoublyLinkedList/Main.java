@@ -3,9 +3,8 @@ public class Main {
         DoublyLinkedList list = new DoublyLinkedList();
         list.addFirst(10);
         list.addLast(20);
-        list.addLast(30);
-        list.addLast(20);
-        list.addLast(50);
+
+        list.printElements();
 //        list.addLast(30);
 //        list.addLast(40);
 //        list.addLast(50);
@@ -14,8 +13,7 @@ public class Main {
 //        list.removeFirst();
 //        list.printReverse();
 //        System.out.println(list.size());
-        list.removeAt(0);
+        list.reverse();
         list.printElements();
-        System.out.println(list.size());
     }
 }
