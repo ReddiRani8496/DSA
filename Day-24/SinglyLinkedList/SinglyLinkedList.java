@@ -237,6 +237,7 @@ public class SinglyLinkedList {
     }
 
     public int binToDec() {
+        
         int result = 0;
         var current = head;
         while(current != null) {
