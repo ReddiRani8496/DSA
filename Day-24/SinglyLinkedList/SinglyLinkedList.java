@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class SinglyLinkedList {
@@ -248,5 +249,33 @@ public class SinglyLinkedList {
         return result;
     }
 
+    public int binToDec1() {
+        int result = 0;
+        int start = size() - 1 ;
+        var current = head;
+        while (current != null) {
+            int sum = (int) Math.pow(2,start);
+            sum *= current.value;
+            result += sum;
+            current = current.next;
+            start --;
+        }
+        return result;
+    }
+
+    public int binToDec2() {
+        reverse();
+        int result = 0;
+        int start = 0;
+        var current = head;
+        while (current != null) {
+            int sum = (int) Math.pow(2,start);
+            sum *= current.value;
+            result += sum;
+            start++;
+            current = current.next;
+        }
+        return result;
+    }
 
 }

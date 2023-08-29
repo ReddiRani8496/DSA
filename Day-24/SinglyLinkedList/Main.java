@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
       LinkedList list = new LinkedList();
@@ -10,9 +12,9 @@ public class Main {
 //        list.addLast(40);
 //        list.addAt(6,80);
 
-        list.addAt(0,20);
-        list.addAt(1,30);
-        list.addAt(0,40);
+        // list.addAt(0,20);
+        // list.addAt(1,30);
+        // list.addAt(0,40);
 
 //        System.out.println(list.indexOf(10));
 //        System.out.println(list.valueOf(1));
@@ -20,7 +22,12 @@ public class Main {
 //        list.printMiddle();
 //       list.printMiddle();
 
+      list.addLast(1);
+      list.addLast(1);
+//      list.addLast(1);
+      System.out.println(list.binToDec1());
+
     }
 }
-//removeAt(int index)
+
 
