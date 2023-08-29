@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 public class CircularLinkedList {
     private class Node {
         private int data;
@@ -7,14 +9,14 @@ public class CircularLinkedList {
         }
     }
     private Node head;
-
+    private int size;
     public void addLast(int value) {
         var node = new Node(value);
-        if(head == null) {
+        if(isEmpty()) {
             head = node;
             head.next = head;
-        }
-        else {
+
+        } else {
             var current = head.next;
             while (current.next != head) {
                 current = current.next;
@@ -22,15 +24,17 @@ public class CircularLinkedList {
             current.next = node;
             node.next = head;
         }
+        size++;
     }
 
     public void addFirst(int value) {
+
         var node = new Node(value);
-        if(head == null) {
+
+        if(isEmpty()) {
             head = node;
             head.next = head;
-        }
-        else {
+        } else {
             var current = head;
             while (current.next != head)
                 current = current.next;
@@ -38,12 +42,14 @@ public class CircularLinkedList {
             node.next = head;
             head = node;
         }
+        size++;
     }
     boolean isEmpty(){
         return head==null;
     }
 
     public void print() {
+
        if(head != null) {
            System.out.print(head.data+" ");
            var current = head.next;
@@ -53,6 +59,49 @@ public class CircularLinkedList {
            }
        }
         System.out.println();
+
+    }
+
+    public void removeFirst() {
+
+        if(isEmpty())
+            throw new NoSuchElementException();
+
+        if(head.next == head)
+            head = null;
+
+        else {
+            var current = head;
+            while (current.next != head) {
+                current = current.next;
+            }
+            current.next = head.next;
+            var temp = head.next;
+            head.next = null;
+            head = temp;
+        }
+        size--;
+    }
+
+    public void removeLast() {
+
+        if(isEmpty())
+            throw new NoSuchElementException();
+
+        if(head.next == head)
+            head = null;
+
+        else {
+            var current = head;
+            while (current.next.next != head)
+                current = current.next;
+            current.next = head;
+        }
+        size--;
+
+    }
+
+    public int size() {
+        return size;
     }
 }
-
