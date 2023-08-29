@@ -1,4 +1,5 @@
 public class CircularDoublyLinkedList {
+    
     private class Node {
         private Node previous;
         private Node next;
@@ -7,12 +8,14 @@ public class CircularDoublyLinkedList {
             this.data = value;
         }
     }
+
     private Node head;
+
     public void addLast(int value) {
         var node = new Node(value);
-        if(head == null) {
+        if (head == null) {
             head = node;
-            head.next = head.previous = node;
+            head.next = node;
         } else {
             var current = head.next;
             while (current.next != head) {
@@ -21,7 +24,6 @@ public class CircularDoublyLinkedList {
             node.previous = current;
             current.next = node;
             node.next = head;
-            head.previous = node;
         }
     }
 
@@ -29,13 +31,14 @@ public class CircularDoublyLinkedList {
         var node = new Node(value);
         if(head == null) {
             head = node;
-            head.next = head.previous = node;
+            head.next = node;
         } else {
             var current = head;
+
             while(current.next != head)
                 current = current.next;
+
             current.next = node;
-            node.previous = current;
             node.next = head;
             head.previous = node;
             head = node;
