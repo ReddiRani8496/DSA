@@ -104,4 +104,47 @@ public class CircularLinkedList {
     public int size() {
         return size;
     }
+
+    public int indexOf(int value) {
+
+        if(isEmpty())
+            throw new IllegalStateException();
+
+        if(head.data == value)
+            return 0;
+        
+        int index = 1;
+        var current = head.next;
+        while (current != head) {
+            if(current.data == value)
+                return index;
+            current = current.next;
+            index++;
+        }
+        return -1;
+    }
+
+    public int lastIndexOf(int value) {
+        
+        if (isEmpty())
+            throw new IllegalStateException();
+
+        if(indexOf(value)==-1)
+            return -1;
+
+        else {
+            var current = head;
+            int start = 0;
+            int index=0;
+            while (current.next != head) {
+                if (current.data == value)
+                    index = start;
+                start++;
+                current = current.next;
+            }
+            if(current.data == value)
+                index = start;
+            return index;
+        }
+    }
 }
