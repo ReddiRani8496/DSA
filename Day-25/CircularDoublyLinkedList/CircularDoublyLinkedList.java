@@ -21,6 +21,7 @@ public class CircularDoublyLinkedList {
             node.previous = current;
             current.next = node;
             node.next = head;
+            head.previous = node;
         }
     }
 
