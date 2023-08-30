@@ -1,6 +1,7 @@
 import java.util.NoSuchElementException;
 
 public class CircularLinkedList {
+    
     private class Node {
         private int data;
         private Node next;
@@ -8,8 +9,10 @@ public class CircularLinkedList {
             this.data = value;
         }
     }
+
     private Node head;
     private int size;
+
     public void addLast(int value) {
         var node = new Node(value);
         if(isEmpty()) {
@@ -41,6 +44,7 @@ public class CircularLinkedList {
             head.next = node;
             head = node;
         }
+        size++;
     }
     public void addFirst(int value) {
 
@@ -83,11 +87,11 @@ public class CircularLinkedList {
             throw new IllegalArgumentException();
 
         if(index == 0) {
-            addFirst(value);
+            addFirstOptimized(value);
             return;
         }
         if(index==size) {
-            addLast(value);
+            addLastOptimized(value);
         } else {
             var node = new Node(value);
             int start = 0;
@@ -142,6 +146,23 @@ public class CircularLinkedList {
         size--;
     }
 
+    public void removeFirstOptimized() {
+        if(isEmpty())
+            throw new NoSuchElementException();
+
+        if(head.next == head)
+            head = null;
+        else {
+            int temp = head.data;
+            head.data = head.next.data;
+            head.next.data = temp;
+            var backup = head.next.next;
+            head.next.next = null;
+            head.next = backup;
+        }
+        size--;
+    }
+
     public void removeLast() {
 
         if(isEmpty())
@@ -166,7 +187,7 @@ public class CircularLinkedList {
             throw new IllegalArgumentException();
 
         if(index == 0) {
-            removeFirst();
+            removeFirstOptimized();
             return;
         }
         if(index == size()-1) {
@@ -185,6 +206,23 @@ public class CircularLinkedList {
         size--;
     }
 
+    public void removeFirstOccurance(int value) {
+        int index = indexOf(value);
+        if(index==-1)
+            throw new NoSuchElementException();
+        else {
+            removeAt(index);
+        }
+    }
+
+    public void removeLastOccurance(int value) {
+        int index = lastIndexOf(value);
+        if(index == -1)
+            throw new NoSuchElementException();
+        else
+            removeAt(index);
+    }
+    
     public int size() {
         return size;
     }
@@ -236,4 +274,3 @@ public class CircularLinkedList {
     }
 
 }
-
