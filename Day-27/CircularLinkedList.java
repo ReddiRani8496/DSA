@@ -1,16 +1,21 @@
 import java.util.NoSuchElementException;
 
 public class CircularLinkedList {
+
     private class Node {
         private int data;
         private Node next;
+
         Node(int value) {
             this.data = value;
         }
     }
+
     private Node head;
     private int size;
+
     public void addLast(int value) {
+
         var node = new Node(value);
         if(isEmpty()) {
             head = node;
@@ -25,6 +30,7 @@ public class CircularLinkedList {
             node.next = head;
         }
         size++;
+        
     }
 
     public void addLastOptimized(int value) {
