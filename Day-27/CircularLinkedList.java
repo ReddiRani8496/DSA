@@ -49,6 +49,7 @@ public class CircularLinkedList {
         }
         size++;
     }
+    
     public void addFirst(int value) {
 
         var node = new Node(value);
