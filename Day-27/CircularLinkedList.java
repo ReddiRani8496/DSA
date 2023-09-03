@@ -3,6 +3,7 @@ import java.util.NoSuchElementException;
 public class CircularLinkedList {
 
     private class Node {
+
         private int data;
         private Node next;
 
@@ -34,6 +35,7 @@ public class CircularLinkedList {
     }
 
     public void addLastOptimized(int value) {
+
         var node = new Node(value);
 
         if(isEmpty()) {
@@ -304,6 +306,7 @@ public class CircularLinkedList {
     }
 
     public void removeDuplicates() {
+        
         if(isEmpty())
             throw new NoSuchElementException();
 
