@@ -10,7 +10,7 @@ public class LinkedList {
             this.value = value;
         }
     }
-    private Node head;
+     Node head;
     private Node tail;
 
     private int size;
