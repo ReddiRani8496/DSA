@@ -302,11 +302,44 @@ public class LinkedList {
         start++;
         insertAt(index,value);
     }
+
     public  void traversal(Node node) {
         if(node == null)
             return;
         System.out.println(node.value);
         traversal(node.next);
+    }
+
+    public void remove(Node node) {
+        if(node == null)
+            throw new IllegalStateException();
+        else if(node.next == null) {
+            head = null;
+            size--;
+            return;
+        } else if(node.next.next == null) {
+            node.next = null;
+            size--;
+            return;
+        }
+        remove(node.next);
+    }
+
+    public void insert(int data) {
+        var node = new Node(data);
+        if(head == null) {
+            head = node;
+        } else if(node.value < head.value) {
+            node.next = head;
+            head = node;
+        } else {
+            Node current = head;
+            while (current.next != null && current.next.value < node.value)
+                current = current.next;
+            node.next = current.next;
+            current.next = node;
+        }
+        size++;
     }
 
 }
