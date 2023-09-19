@@ -613,12 +613,11 @@ public class LinkedList {
         }
     }
     Node backup;
-    int size1 = 0;
-    int size2 = 0;
+
     public  Node createList() {
         var list = new LinkedList();
-        list.addLast(1);
-        list.addLast(2);
+//        list.addLast(1);
+//        list.addLast(2);
         list.addLast(3);
         list.addLast(5);
          backup = list.tail;
@@ -631,7 +630,8 @@ public class LinkedList {
     public Node createList1() {
         var list1 = new LinkedList();
         list1.addLast(7);
-        list1.head.next = backup;
+//        list1.addLast(9);
+        list1.tail.next = backup;
         return list1.head;
     }
 
@@ -668,7 +668,43 @@ public class LinkedList {
         }
     }
 
- 
+
+    public void intersection2(Node node1,Node node2) {
+       int size1=0;
+       int size2=0;
+       var current = node1;
+       var newCurrent = node2;
+       while (current!=null || newCurrent!=null){
+           if(current!=null) {
+               current = current.next;
+               size1++;
+           }
+           if(newCurrent!=null) {
+               newCurrent = newCurrent.next;
+               size2++;
+           }
+       }
+       int steps = size1-size2;
+        var start = node1;
+        var start1 = node2;
+        if(steps>=0) {
+            for (int i = 0; i < steps; i++) {
+                start = start.next;
+            }
+        } else {
+            for(int i=0;i<Math.abs(steps);i++) {
+                start1 = start1.next;
+            }
+        }
+        while (start!=null) {
+            if(start.value==start1.value){
+                System.out.println(start.value);
+                return;
+            }
+            start = start.next;
+            start1 = start1.next;
+        }
+    }
 
     public Node lastNNodes(int n){
 
@@ -711,8 +747,27 @@ public class LinkedList {
         }
         str1.reverse();
         return str.compareTo(str1) == 0;
+    }
 
+    public boolean isPalindrome1() {
+        if (isEmpty())
+            throw new IllegalArgumentException();
 
+        var first = head;
+        StringBuilder res = new StringBuilder();
+        while (first != null) {
+            res.append(first.value);
+            first = first.next;
+        }
+        return palindromeString(String.valueOf(res));
+    }
+    static boolean palindromeString(String str){
+        int len=str.length();
+        if(len<=1)
+            return true;
+        if(str.charAt(0)==str.charAt(len-1))
+            return palindromeString(str.substring(1,len-1));
+        return false;
     }
 
     public void removeDupl(){
