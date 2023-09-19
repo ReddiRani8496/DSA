@@ -612,23 +612,63 @@ public class LinkedList {
             }
         }
     }
-
+    Node backup;
+    int size1 = 0;
+    int size2 = 0;
     public  Node createList() {
         var list = new LinkedList();
         list.addLast(1);
         list.addLast(2);
         list.addLast(3);
-        list.addLast(4);
         list.addLast(5);
+         backup = list.tail;
+        list.addLast(6);
+        list.addLast(7);
+        list.addLast(8);
         return list.head;
     }
 
-    public Node createList1(){
+    public Node createList1() {
         var list1 = new LinkedList();
         list1.addLast(7);
-        head.next = createList();
-        return head;
+        list1.head.next = backup;
+        return list1.head;
     }
+
+    public void intersection(Node node1, Node node2) {
+        var current = node1;
+        var newCurrent = node2;
+        var previous = newCurrent;
+        while (current!=null) {
+            while (newCurrent!=null) {
+                if(current.value == newCurrent.value) {
+                    System.out.println(current.value);
+                    return;
+                }
+                newCurrent = newCurrent.next;
+            }
+            current = current.next;
+            newCurrent = previous.next;
+        }
+    }
+    public void intersection1(Node node1, Node node2) {
+        HashSet<Object> set = new HashSet<Object>();
+        var current = node1;
+        while (current!=null) {
+            set.add(current);
+            current = current.next;
+        }
+        var current1 = node2;
+        while (current1!=null) {
+            if(set.contains(current1)) {
+                System.out.println(current1.value);
+                return;
+            }
+            current1 = current1.next;
+        }
+    }
+
+ 
 
     public Node lastNNodes(int n){
 
