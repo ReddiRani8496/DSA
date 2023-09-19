@@ -770,6 +770,27 @@ public class LinkedList {
         return false;
     }
 
+    public boolean isPalindrome2() {
+        if (isEmpty())
+            throw new IllegalArgumentException();
+
+        var first = head;
+        StringBuilder res = new StringBuilder();
+        while (first != null) {
+            res.append(first.value);
+            first = first.next;
+        }
+        int val = Integer.parseInt(String.valueOf(res));
+            int sum=0;
+            int m=val;
+            while(m!=0){
+                sum=sum*10+(m%10);
+                m=m/10;
+            }
+        return val == sum;
+
+    }
+
     public void removeDupl(){
         var current = head;
         var current1 = head;
