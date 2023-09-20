@@ -43,7 +43,10 @@ public class CircularLL {
         var temp = first.next;
         first.next = head;
         head2 = temp;
-        second.next = head2;
+        if(second.next == head)
+            second.next = head2;
+        if(second.next.next == head)
+            second.next.next = head2;
         node[0]=head;
         node[1] = head2;
         return node;
