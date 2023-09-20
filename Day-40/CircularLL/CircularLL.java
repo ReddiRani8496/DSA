@@ -36,7 +36,7 @@ public class CircularLL {
             node[1] = second;
             return node;
         }
-        while (second.next!=head && second.next.next!=null) {
+        while (second.next!=head && second.next.next!=head) {
             second = second.next.next;
             first = first.next;
         }
