@@ -1,0 +1,22 @@
+Infix Expressions
+----------------
+
+Infix expressions are the most usual type of expression. 
+This notation is typically employed when writing arithmetic expressions by hand.
+ Moreover, in the infix expression, we place the operator between the two operands it operates on.
+
+For example, the operator “+” appears between the operands A and B in the expression “A + B”. 
+
+Prefix Expressions
+-----------------
+
+Prefix expressions, also known as Polish notation, place the operator before the operands.
+
+For example, in the expression “+ A B”,  we place the “+” operator before the operands A and B.
+
+Postfix Expressions
+-------------------
+
+Postfix expressions, also known as reverse Polish notation, where we place the operator after the operands.
+
+For instance, in the expression “A B +”, the “+” we place the operator after the operands A and B. 
