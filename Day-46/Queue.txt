@@ -1,0 +1,13 @@
+Queue real world applications:
+-----------------------------
+
+Printers, Operating system, web servers
+
+Operations of Queue:
+------------------
+
+enqueue - O(1)
+dequeue - O(1)
+peek    - O(1)
+isEmpty - O(1)
+isFull  - O(1)
