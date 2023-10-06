@@ -1,16 +1,20 @@
 import java.util.Stack;
 
 public class QueueWithTwoStacks {
+
     private Stack<Integer> stack1 = new Stack<>();
     private Stack<Integer> stack2 = new Stack<>();
+
     public void enqueue(int item) {
         stack1.push(item);
     }
+
     public int dequeue() {
         isEmpty();
         pushStack1ToStack2();
         return stack2.pop();
     }
+    
     public int peek() {
         isEmpty();
         pushStack1ToStack2();
