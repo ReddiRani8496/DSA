@@ -41,7 +41,7 @@ public class PriorityQueue {
 
     @Override
     public String toString() {
-        return Arrays.toString(items);
+        return Arrays.toString(Arrays.copyOfRange(items,0,size));
     }
 }
 
