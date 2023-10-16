@@ -2,6 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class FirstRepeatingChar {
+    
     public static void main(String[] args) {
         
         String str = "abcdab";
@@ -22,4 +23,5 @@ public class FirstRepeatingChar {
         
         return Character.MIN_VALUE;
     }
+
 }
