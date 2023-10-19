@@ -14,7 +14,7 @@ public class HashSet {
 
         int i=0;
         int newLocation=(2*num+3)%10;
-        while (data[newLocation]!=0) {
+        while (data[newLocation]!=0 && i<data.length-1) {
             newLocation = (newLocation+i)%10;
             i++;
         }
