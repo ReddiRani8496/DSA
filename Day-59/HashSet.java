@@ -2,9 +2,13 @@ import java.util.Arrays;
 
 public class HashSet {
     private int data[] = new int[10];
+    int size=0;
     public void add(int num) {
+        if(size==data.length)
+            throw new IllegalStateException();
         int index = hash(num);
         data[index] = num;
+        size++;
     }
     private int hash(int num) {
 
@@ -17,14 +21,14 @@ public class HashSet {
         return newLocation;
 
     }
-    public boolean containsKey(int num) {
-        int index = hash(num);
-        return data[index] != 0;
-    }
+
 
     @Override
     public String toString() {
         return Arrays.toString(data);
     }
+    public boolean containsKey(int num) {
+        int index = hash(num);
+        return data[index] != 0;
+    }
 }
-
