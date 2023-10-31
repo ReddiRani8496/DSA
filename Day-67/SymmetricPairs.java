@@ -27,4 +27,19 @@ public class SymmetricPairs {
                 map.put(first, second);
         }
     }
+    
+    public static void symmetricParisNaive(int[][] arr,int rows) {
+        for (int i = 0; i < rows; i++) {
+            for (int j = i + 1; j < rows; j++) {
+                if (arr[i][0] == arr[j][1] && arr[i][1] == arr[j][0]) {
+                    System.out.print("(");
+                    System.out.print(arr[i][0]);
+                    System.out.print(", ");
+                    System.out.print(arr[i][1]);
+                    System.out.print(")");
+                    System.out.println();
+                }
+            }
+        }
+    }
 }
