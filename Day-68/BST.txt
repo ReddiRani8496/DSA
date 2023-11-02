@@ -1,0 +1,34 @@
+A Binary Search Tree (BST) is a special type of binary tree in which 
+    the left child of a node has a value less than the node’s value 
+    and the right child has a value greater than the node’s value.
+
+Applications:
+------------
+-> BSTs are used for indexing in databases.
+-> It is used to implement searching algorithms.
+-> BSTs are used to implement Huffman coding algorithm.
+-> It is also used to implement dictionaries.
+-> Used for data caching.
+-> Used in Priority queues.
+-> Used in spell checkers.
+-> Auto completion
+-> Compression
+-> DNS
+-> TLD
+
+Advantages
+----------
+
+-> Efficient Searching
+-> Memory Efficient
+-> Fast insertion and deletion
+-> Easy to implement
+-> Useful for sorting
+
+Disadvantages:
+-------------
+
+-> Limited structure
+-> Unbalanced trees
+-> Space inefficiency
+-> slow performance in worst sece
