@@ -1,0 +1,33 @@
+Traversals:
+---------
+
+1.  Breadth Wise
+        Breadth First Traversal
+
+2. Depth Wise
+        Depth First Traversal
+
+Depth First Traversal:
+---------------------
+
+-> Pre-Order Traversal
+-> In-Order Traversal
+-> Post-Order Traversal
+
+Pre-Order Traversal:
+--------------------
+
+    root left right
+
+In-Order Traversal:
+--------------------
+
+    left root right
+
+Post-Order Traversal:
+--------------------
+
+    left right root
+
+
+
