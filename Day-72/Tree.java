@@ -1,20 +1,8 @@
 public class Tree {
-    private class Node {
-        int data;
-        Node leftChild;
-        Node rightChild;
 
-        public Node(int data) {
-            this.data = data;
-        }
-
-        @Override
-        public String toString() {
-            return  Integer.toString(data);
-        }
-    }
 
     public Node root;
+
 
     public void insert(int data) {
         if(root == null) {
@@ -140,4 +128,17 @@ public class Tree {
         return false;
     }
 }
+ class Node {
+    int data;
 
+     public  Node leftChild;
+     public  Node rightChild;
+    public Node(int data) {
+        this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return  Integer.toString(data);
+    }
+}
