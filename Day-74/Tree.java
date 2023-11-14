@@ -169,6 +169,24 @@ public class Tree {
         }
     }
 
+    public boolean isPerfectBinaryTree(Node root) {
+        int height = height(root);
+        int size = sizeOfTree(root);
+        System.out.println(height);
+        System.out.println(size);
+        int total = (int) Math.pow(2,height);
+        return size==(total-1);
+    }
+
+    public boolean isFullBinaryTree(Node root) {
+        if(root == null)
+            return true;
+        if(root.leftChild == null && root.rightChild == null)
+            return true;
+        if(root.leftChild!=null && root.rightChild!=null)
+            return (isFullBinaryTree(root.leftChild) && isFullBinaryTree(root.rightChild));
+        return false;
+    }
 }
  class Node {
     int data;
