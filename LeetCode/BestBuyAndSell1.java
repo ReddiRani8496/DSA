@@ -1,3 +1,4 @@
+package LeetCode;
 class BestBuyAndSell {
     public int maxProfit(int[] prices) {
         int maxProfit=0;
