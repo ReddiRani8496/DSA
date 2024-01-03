@@ -5,8 +5,10 @@ public class NumberOfDigits {
     }
 
     private static int numberOfDigits(int n) {
-        if(n==0)
+
+        if(n == 0)
             return 0;
-        return 1+numberOfDigits(n/10);
+
+        return 1 + numberOfDigits(n/10);
     }
 }
