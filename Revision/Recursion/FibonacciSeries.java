@@ -6,13 +6,13 @@ public class FibonacciSeries {
         int n = sc.nextInt();
         System.out.println(fibonacciSeries(n));
     }
-    private static int fibonacciSeries(int n) {
+     private static int fibonacciSeries(int n) {
         if(n==1 || n==0)
             return n;
 
         int fnum1 = fibonacciSeries(n-1);
         int fnum2 = fibonacciSeries(n-2);
 
-        return fnum1+fnum2;
+        return fnum1 + fnum2;
     }
 }
