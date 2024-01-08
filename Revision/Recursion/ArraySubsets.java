@@ -50,15 +50,15 @@ public class ArraySubsets {
 
     private static void printSubsets(int[] arr, int[] output, int index) {
         if(index==arr.length) {
-            for (int i = 0; i < output.length; i++) {
-                System.out.print(output[i]+" ");
+            for (int j : output) {
+                System.out.print(j + " ");
             }
             System.out.println();
 
             return;
         }
 
-        int temp[] = new int[output.length+1];
+        int[] temp = new int[output.length+1];
         System.arraycopy(output,0,temp,0,output.length);
         temp[output.length] = arr[index];
 

@@ -13,12 +13,12 @@ public class CountZeroes {
 
     private static int countZeroes(int n) {
 
-        if(n==0)
+        if(n == 0)
             return 0;
 
-        if(n%10==0) {
+        if( n%10 == 0) {
 
-            return 1+countZeroes(n/10);
+            return 1 + countZeroes(n/10);
 
         } else {
 

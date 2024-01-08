@@ -10,8 +10,12 @@ public class PowerOfN {
     }
 
     private static int powerN(int n, int x) {
-        if(x==0)
+        if(x == 0)
             return 1;
-        return n*powerN(n,x-1);
+
+        return n*powerN(n, x-1);
     }
+
+
+
 }
