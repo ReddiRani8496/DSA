@@ -58,7 +58,9 @@ public class Matrix {
     }
 
     public Matrix transposeMatrix(Matrix matrix) {
+
         Matrix matrix1 = new Matrix(matrix.rows,matrix.cols);
+        
         for (int i=0;i<matrix.rows;i++) {
             for (int j=0;j<matrix.cols;j++) {
                 matrix1.data[i][j]=matrix.data[j][i];
