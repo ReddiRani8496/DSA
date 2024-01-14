@@ -2,6 +2,7 @@ package Revision;
 
 public class Main {
     public static void main(String[] args) {
+        
         String input1 = "hellosannasmith";
         String challengeToken = "ycbpukhrd99";
 
