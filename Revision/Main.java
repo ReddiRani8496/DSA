@@ -21,12 +21,15 @@ public class Main {
     }
 
     public static String searchingChallenge(String str) {
+
         int n = str.length();
         int maxLength = 0;
         int start = 0;
 
         for (int i = 0; i < n; i++) {
+            
             for (int j = i; j < n; j++) {
+
                 if (isPalindrome(str, i, j) && (j - i + 1) > maxLength) {
                     maxLength = j - i + 1;
                     start = i;
