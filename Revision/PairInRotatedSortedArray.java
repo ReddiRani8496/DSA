@@ -12,6 +12,7 @@ public class PairInRotatedSortedArray {
     }
 
     private static boolean foundPair(int[] arr, int sum, int n) {
+
         for (int i = 0; i < n-1; i++) {
             for (int j = i+1; j < n; j++) {
                 if(arr[i]+arr[j]==sum)
@@ -23,12 +24,15 @@ public class PairInRotatedSortedArray {
 
     private static boolean foundPair1(int[] arr,int sum,int n) {
         int i;
+
         for (i = 0; i < n-1; i++) {
             if(arr[i]>arr[i+1])
                 break;
         }
+
         int l = (i+1)%n;
         int r = i;
+
         while (l != r) {
             if(arr[l]+arr[r]==sum)
                 return true;
@@ -40,6 +44,7 @@ public class PairInRotatedSortedArray {
                 r = (n+r-1)%n;
             }
         }
+        
         return false;
     }
 }
