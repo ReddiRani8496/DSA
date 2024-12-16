@@ -1,0 +1,75 @@
+Time Complexity:
+---------------
+
+O(1) -> Constant time
+O(n) -> Linear time
+O(log n) -> logorthimic time
+O(n^2) -> Quadratic time
+O(2^n) -> exponential time
+O(n log n) -> linearthimic time
+
+Example:
+-------
+
+int arr[] = {1,2,3,4,5,6,7,8}
+
+int getElement(int arr, int index) {
+    return arr[index];
+}
+
+Time -> O(1) and space O(1)
+
+
+Example:
+-------
+
+int arr[] = {1,2,3,4,5,6}
+
+for(int i=0; i<arr.length; i++)
+    total += arr[i];
+
+Time -> O(n) and space O(1)
+
+Example:
+-------
+
+int arr[] = {1,2,3,4,5,6}
+
+for(int i=0;i<n/2;i++)
+    total += arr[i] + arr[n-(i+1)];
+
+if(n%2!=0)
+    total += arr[n/2];
+
+Time -> O(n/2)= O(n) because constants are ignored
+space -> O(1)
+
+Search:
+------
+
+int arr[] = {0,1,2,3,4,5,6}
+for(int i=0; i<arr.length; i++)
+    if(arr[i]==element)
+        return true;
+
+return false;
+
+Time -> O(n), space -> O(1)
+
+
+Search(Sorted array)
+-------------------
+
+int arr[] = {1,2,3,4,5,6,7}
+left = 0;
+right = n-1;
+
+while(left <= right) {
+    mid = (left + right)/2;
+    if(arr[mid]==element)
+        return true;
+    else if(arr[mid]>element)
+        right = mid-1;
+    else
+        left = mid + 1;
+}
