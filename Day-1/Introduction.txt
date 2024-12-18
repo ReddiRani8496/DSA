@@ -1,38 +1,35 @@
-Why java is famous?
+1.Why is Java Famous?
+   ->  Because it achieves:
+         -> Platform Independence
+         -> Write Once, Run Anywhere (WORA)
+         -> Multithreading
 
--> Because it achieves:
+2.What is Platform Dependency?
+   ->  Applications that run only on a specific operating system.
 
-            Platform Independency
-            Write once Run Anywhere[WORA]
-            Multithreading
+3.What is Platform Independence?
+   ->  Applications that can run on any operating system.
 
-What is Platform Dependency?
+4.Why Do We Send Bytecode or Class Files to the Client Instead of Source Code?
+   ->  There are several reasons for this, but the primary reason is that we do not want to share our programming logic with others. Sending source 
+       code would expose the internal workings of the application, making it vulnerable to unauthorized access, modification, or reverse engineering.
 
--> Applications that run under only one operating system.
+5.Compiler vs. Interpreter
+   ->  A compiler translates the entire source code into machine code before execution, which allows the program to run faster since no translation 
+       occurs during runtime. In contrast, an interpreter translates and executes code line by line during runtime, resulting in slower execution due 
+       to the overhead of real-time translation.
 
-What is Platform Independency?
+6.Is Java a Compiled or Interpreted Language?
+   ->  Java supports both compilation and interpretation:
+         ->  The compiler is used to convert the source code into bytecode.
+         ->  The JVM (Java Virtual Machine) acts as an interpreter to execute the bytecode.
 
--> Applications that run on any operating system.
+7.What is an Algorithm?
+   ->  A step-by-step procedure to solve a problem.
 
-Why we don't send src folder to the client?
+8.What is a Flowchart?
+   ->  A flowchart is a pictorial representation of an algorithm or process. It uses standardized symbols such as rectangles, diamonds, and arrows to 
+       visually depict the steps, decisions, and flow of a process or algorithm in sequential order.
 
--> There are several reasons, the main reason is we don't send our programming logic to others.
-
-
-Compiler over Interpreter?
-
--> Compiler takes less time as compared to Interpreter.
-
-Is java supports compiler or interpreter?
-
--> java supports both compiler and interpretation.
--> compiler is used to convert the source code to byte code
--> JVM(Java Virtual Machine) is a interpreter.
-
-What is algorithm?
-
--> Step-by-step procedure to solve a problem.
-
-Is DSA specific to Java?
-
--> No DSA is a generic, it can be applied to any programming language.
+9.Is DSA Specific to Java?
+   ->  No, DSA (Data Structures and Algorithms) is generic and can be applied to any programming language.
