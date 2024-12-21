@@ -1,0 +1,29 @@
+Data structures:
+----------------
+
+1. Linear Data structures
+2. Non-linear Data structures
+
+Linear Data structures:
+----------------------
+Data structure in which data elements are arranged sequentially or linearly, where each element is attached to its previous and next adjacent elements, is called a linear data structure. 
+
+Non-linear data structure: 
+--------------------------
+Data structures where data elements are not placed sequentially or linearly are called non-linear data structures. In a non-linear data structure, we can’t traverse all the elements in a single run only. 
+
+
+
+Linear Data Structure Examples:
+-------------------------------
+i. Arrays - An array is a linear data structure and it is a collection of items stored at contiguous memory locations. 
+ii. Linked Lists - A linked list is a linear data structure in which elements are not stored at contiguous memory locations.
+iii. Stack - Stack is a linear data structure that follows a particular order in which the operations are performed. (LIFO)
+iv. Queue - Queue is a linear data structure that follows a particular order in which the operations are performed.(FIFO)
+v. Hashtable - Stores elements in key-value pairs (Non-Synchronized)
+vi. HashMap - Stores elements in key-value pairs (Synchronized)
+
+Non-linear Data Structure Examples:
+----------------------------------
+i. Trees 
+ii. Graphs
