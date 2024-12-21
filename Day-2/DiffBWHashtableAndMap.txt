@@ -1,0 +1,9 @@
+Hashtable:
+-> Not synchronized
+-> It is faster
+-> Doesn't allow null values
+
+HashMap:
+-> synchronized
+-> Due to synchronization it is slow
+-> Allows null values
