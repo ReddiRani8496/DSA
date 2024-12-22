@@ -1,0 +1,29 @@
+Arrays:
+------
+
+-> Linear data structure
+-> Stores homogeneous elements
+-> contiguous memory allocation
+-> Fixed in size
+-> Index based system (starts with 0 and ends with n-1)
+-> allows duplicates
+
+Disadvantages:
+--------------
+-> Due to fixed size not flexible
+-> Even though memory is there, due to contiguous sometimes memory will be wasted
+-> Insetion, deletion in the middle of array takes more time
+
+Arraylist:
+----------
+-> Not synchronized, meaning it is not thread-safe. Multiple threads can access it simultaneously.
+-> 	Faster due to the lack of synchronization overhead. Suitable for single-threaded environments.
+-> Increases its capacity by 50% when the array exceeds its size.
+-> The default initial capacity of an ArrayList is 10. However, when you create an ArrayList using the default constructor (new ArrayList<>()),
+
+Vector:
+------
+-> Synchronized, making it thread-safe. Only one thread can access it at a time.
+-> Slower because of synchronization. Suitable for multi-threaded environments.
+-> Doubles its capacity (100% increase) when the array exceeds its size.
+-> The default initial capacity of a Vector is also 10. When you create a Vector using its default constructor (new Vector<>())
