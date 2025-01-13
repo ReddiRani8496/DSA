@@ -10,9 +10,10 @@ public class TrappingRainWater {
             if(arr[i]>left[i-1]) {
                 left[i] = arr[i];
             } else {
-                left[i] = left[i-1];            }
+                left[i] = left[i-1];            
+            }
         }
-        System.out.println(Arrays.toString(left));
+       
         right[arr.length-1] = arr[arr.length-1];
         for(int i= arr.length-2;i>=0;i--){
             if(arr[i]>right[i+1]) {
@@ -21,7 +22,7 @@ public class TrappingRainWater {
                 right[i] = right[i+1];
             }
         }
-        System.out.println(Arrays.toString(right));
+        
         int water = 0;
         for(int i=0;i<arr.length;i++) {
             int minValue = Math.min(right[i],left[i]);
@@ -30,6 +31,6 @@ public class TrappingRainWater {
                 water+=total;
             }
         }
-        System.out.println("total water: " + water);
+        System.out.println("Total water: " + water);
     }
 }
