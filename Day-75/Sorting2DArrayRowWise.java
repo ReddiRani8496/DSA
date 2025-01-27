@@ -9,6 +9,7 @@ public class Sorting2DArrayRowWise {
         System.out.println("Enter number of columns");
         int cols = sc.nextInt();
         int[][] arr = new int[rows][cols];
+        
         for(int i=0; i<rows; i++) {
             for(int j=0; j<cols; j++) {
                 System.out.print("Enter element at position [" + i + "][" + j + "]: ");
@@ -23,6 +24,7 @@ public class Sorting2DArrayRowWise {
             System.out.println();
         }
         sort(arr, rows, cols);
+
         System.out.println("Array after sorting: ");
         for(int i=0;i<rows;i++) {
             for(int j=0;j<cols;j++) {
@@ -33,15 +35,20 @@ public class Sorting2DArrayRowWise {
     }
 
     public static void sort(int[][] arr, int rows, int col) {
+
         for(int i=0;i<rows;i++) {
+        
             for(int j=0;j<col;j++) {
-               for(int k=0;k<col-j-1;k++) {
-                   if(arr[i][k]>arr[i][k+1]) {
+        
+                for(int k=0;k<col-j-1;k++) {
+        
+                    if(arr[i][k]>arr[i][k+1]) {
                        int temp = arr[i][k];
                        arr[i][k] = arr[i][k+1];
                        arr[i][k+1] = temp;
                    }
-               }
+        
+                }
             }
         }
        
