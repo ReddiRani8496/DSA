@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class Permutations {
     public static void main(String[] args) {
-        String str = "abc";
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
         permutationOfString(str, "");
     }
       public static void permutationOfString(String str, String ans) {
