@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class TowerOfHanoi {
      public static void main(String[] args) {
-      towerOfHanoi(7,'A','B','C');
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+      towerOfHanoi(n,'A','B','C');
 
     }
     public static void towerOfHanoi(int n, char source, char helper, char destination) {
